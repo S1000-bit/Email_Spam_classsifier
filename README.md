@@ -1,42 +1,34 @@
-Classification of email if it is spam or not spam.
+# E-Mail Spam Classifier
 
-Steps Done During Preprocessing:
+A Jupyter notebook for classifying e-mails as spam or not spam using a machine learning model.
 
-1)Converting into lower case.
+## Table of Contents
 
-2)Remove Punctuation.
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Running the Notebook](#running-the-notebook)
 
-3)Removing Stopwords.
 
-4)Stemming
+## Introduction
 
-5)Count Vectorization
+This project includes a Jupyter notebook that performs exploratory data analysis (EDA) and builds a model for classifying e-mails as spam or not spam. The data distribution is uneven, and various techniques are employed to handle this challenge.
 
-Model Building :
+## Installation
 
-svc = SVC(kernel= 'sigmoid', gamma=1.0)
+### Prerequisites
 
-knc = KNeighborsClassifier()
+- Python 3.8.10
+- Jupyter Notebook
 
-mnb = MultinomialNB()
+### Steps
 
-bnb = BernoulliNB()
+1. Clone the repository:
 
-gnb = GaussianNB()
-
-dc = DecisionTreeClassifier(max_depth=5)
-
-rc = LogisticRegression(solver='liblinear', penalty='l1')
-
-rfc = RandomForestClassifier(n_estimators=50, random_state=2)
-
-abc = AdaBoostClassifier(n_estimators=50, random_state=2)
-
-bc = BaggingClassifier(n_estimators =50, random_state=2)
-
-etc = ExtraTreesClassifier(n_estimators=50, random_state=2)
-
-gbdt = GradientBoostingClassifier(n_estimators=50, random_state=2)
-
-xgb = XGBClassifier(n_estimators=50, random_state=2)
-
+   ```bash
+   git clone https://github.com/your-repository.git
+   cd your-repository
+2. Create and activate a virtual environment:
+   ```bash
+      python -m venv env
+      source env/bin/activate  # On Windows use `env\Scripts\activate`
