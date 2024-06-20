@@ -26,7 +26,7 @@ This project includes a Jupyter notebook that performs exploratory data analysis
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repository.git
+   git clone https://github.com/S1000-bit/Email_Spam_classsifier.git
    cd your-repository
 2. Create and activate a virtual environment:
    ```bash
